@@ -2,13 +2,13 @@ import scrapy
 import re
 class ProductsSpider(scrapy.Spider):
     name = "mercado2"
-    start_urls = ['http://carros.mercadolibre.com.co/accesorios-para-carros/']
+    start_urls = ['https://carros.mercadolibre.com.co/accesorios-para-carros/']
 
     def parse(self, response):
-        for element in response.xpath('//li[contains(@class, "results-item list-view-item rowItem ")]/h2/a/@href').extract():
+        for element in response.xpath('//h2[contains(@class, "item__title list-view-item-title")]/a/@href').extract():
             yield scrapy.Request(element,callback=self.parse_product)
 
-        next_page = response.xpath('//ul[contains(@class, "ch-pagination")]/li[contains(@class, "last-child")]/a/@href').extract_first()
+        next_page = response.xpath('//li[contains(@class, "pagination__next")]/a/@href').extract_first()
         if next_page is not None:
             print(next_page)
             yield scrapy.Request(next_page, callback=self.parse)
@@ -30,13 +30,17 @@ class ProductsSpider(scrapy.Spider):
                 return ""
             else:
                 return html_element.strip()
+        # Get the info about the product, if is used or new
+        condition1 = response.xpath('//div[contains(@class, "item-conditions")]/text()').extract_first()
+        if "Usado" in condition1:
+            return 0
 
         yield {
-            'title': check_text(response.xpath('//h1[contains(@class, "vip-title-main ")]/text()').extract_first()),
-            'price': check_numb(response.xpath('//article[contains(@class, "vip-price ch-price")]/strong/text()').extract_first()),
-            'condition1': check_text(response.xpath('//div[contains(@class, "item-conditions")]/dd[1]/text()').extract_first()),
-            'condition2': check_numb(response.xpath('//div[contains(@class, "item-conditions")]/dd[2]/text()').extract_first()),
-            'url_images': response.xpath('//*[contains(@class, "gallery-trigger")]/img/@src').extract()
+            'title': check_text(response.xpath('//h1[contains(@class, "item-title__primary ")]/text()').extract_first()),
+            'price': check_numb(response.xpath('//span[contains(@class, "price-tag-fraction")]/text()').extract_first()),
+            'condition1': check_numb(condition1),
+            'url_images': response.xpath('//a[contains(@class, "gallery-trigger ch-zoom-trigger")]/img/@src').extract(),
+            'category' : check_text(response.xpath('//ul[contains(@class, "vip-navigation-breadcrumb-list")]/li[2]/a/text()').extract_first())
             }
 
 
