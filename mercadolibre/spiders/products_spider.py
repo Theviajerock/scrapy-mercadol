@@ -55,7 +55,9 @@ class ProductsSpider(scrapy.Spider):
             'price': response.xpath('//span[contains(@class, "price-tag-fraction")]/text()').extract_first(),
             'condition1': check_numb(condition1),
             'url_images': response.xpath('//a[contains(@class, "gallery-trigger ch-zoom-trigger")]/img/@src').extract(),
+            'url': check_text(response.xpath('//h1[contains(@class, "item-title__primary ")]/text()').extract_first()),
             'category' : check_text(response.xpath('//ul[contains(@class, "vip-navigation-breadcrumb-list")]/li[2]/a/text()').extract_first())
+
             }
 
 
