@@ -2,7 +2,8 @@ import scrapy
 import re
 class ProductsSpider(scrapy.Spider):
     name = "mercado2"
-    start_urls = ['https://deportes.mercadolibre.com.co/bicicletas-ciclismo/repuestos/']
+    start_urls = ['https://listado.mercadolibre.com.co/deportes-fitness/',
+                  'https://listado.mercadolibre.com.co/salud-belleza/']
 
     def parse(self, response):
 #        def parse_details(self, response):
@@ -52,10 +53,10 @@ class ProductsSpider(scrapy.Spider):
 
         yield {
             'title': check_text(response.xpath('//h1[contains(@class, "item-title__primary ")]/text()').extract_first()),
-            'price': response.xpath('//span[contains(@class, "price-tag-fraction")]/text()').extract_first(),
+            'price': check_numb(response.xpath('//span[contains(@class, "price-tag-fraction")]/text()').extract_first()),
             'condition1': check_numb(condition1),
             'url_images': response.xpath('//a[contains(@class, "gallery-trigger ch-zoom-trigger")]/img/@src').extract(),
-            'url': check_text(response.xpath('//h1[contains(@class, "item-title__primary ")]/text()').extract_first()),
+            'url': response.url,
             'category' : check_text(response.xpath('//ul[contains(@class, "vip-navigation-breadcrumb-list")]/li[2]/a/text()').extract_first())
 
             }
