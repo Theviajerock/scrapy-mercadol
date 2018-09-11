@@ -88,3 +88,5 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+LOG_FILE = 'log'
+DOWNLOAD_DELAY = 0.05    # 50 ms of delay

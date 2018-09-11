@@ -1,0 +1,176 @@
+2018-09-10 20:56:48 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mercadolibre)
+2018-09-10 20:56:48 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.5.3 (default, Jan 19 2017, 14:11:04) - [GCC 6.3.0 20170118], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.9.0-3-amd64-x86_64-with-debian-9.2
+2018-09-10 20:56:48 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mercadolibre', 'LOGSTATS_INTERVAL': 0, 'LOG_FILE': 'log', 'DOWNLOAD_DELAY': 0.25, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36', 'NEWSPIDER_MODULE': 'mercadolibre.spiders', 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter', 'SPIDER_MODULES': ['mercadolibre.spiders'], 'ROBOTSTXT_OBEY': True}
+2018-09-10 20:56:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2018-09-10 20:56:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-10 20:56:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-10 20:56:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-09-10 20:56:49 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-10 20:56:49 [scrapy.core.engine] INFO: Spider opened
+2018-09-10 20:56:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/robots.txt> (referer: None)
+2018-09-10 20:56:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/HOLLMANJUNIOR> (referer: None)
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 21:26:43 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 21:26:46 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 21:28:56 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 21:49:22 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 21:49:54 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mercadolibre)
+2018-09-10 21:49:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.5.3 (default, Jan 19 2017, 14:11:04) - [GCC 6.3.0 20170118], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.9.0-3-amd64-x86_64-with-debian-9.2
+2018-09-10 21:49:54 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'mercadolibre.spiders', 'SPIDER_MODULES': ['mercadolibre.spiders'], 'LOG_FILE': 'log', 'DOWNLOAD_DELAY': 0.25, 'ROBOTSTXT_OBEY': True, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36', 'BOT_NAME': 'mercadolibre', 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter', 'LOGSTATS_INTERVAL': 0}
+2018-09-10 21:49:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-09-10 21:49:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-10 21:49:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-10 21:49:54 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-09-10 21:49:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-10 21:49:54 [scrapy.core.engine] INFO: Spider opened
+2018-09-10 21:49:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/robots.txt> (referer: None)
+2018-09-10 21:49:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/MAJO_TIENDA> (referer: None)
+2018-09-10 22:00:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mercadolibre)
+2018-09-10 22:00:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.5.3 (default, Jan 19 2017, 14:11:04) - [GCC 6.3.0 20170118], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.9.0-3-amd64-x86_64-with-debian-9.2
+2018-09-10 22:00:03 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'mercadolibre.spiders', 'SPIDER_MODULES': ['mercadolibre.spiders'], 'DOWNLOAD_DELAY': 0.25, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36', 'LOGSTATS_INTERVAL': 0, 'BOT_NAME': 'mercadolibre', 'LOG_FILE': 'log', 'ROBOTSTXT_OBEY': True, 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter'}
+2018-09-10 22:00:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-09-10 22:00:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-10 22:00:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-10 22:00:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-09-10 22:00:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-10 22:00:03 [scrapy.core.engine] INFO: Spider opened
+2018-09-10 22:00:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/robots.txt> (referer: None)
+2018-09-10 22:00:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/MAJO_TIENDA> (referer: None)
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 22:00:43 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 22:01:00 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: diff parser start
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: diff parser calculated
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: diff: line_lengths old: 1, new: 1
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: diff replace old[1:1] new[1:1]
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: parse_part from 1 to 1 (to 0 in part parser)
+2018-09-10 22:01:05 [parso.python.diff] DEBUG: diff parser end
+2018-09-10 22:01:19 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mercadolibre)
+2018-09-10 22:01:19 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.5.3 (default, Jan 19 2017, 14:11:04) - [GCC 6.3.0 20170118], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.9.0-3-amd64-x86_64-with-debian-9.2
+2018-09-10 22:01:19 [scrapy.crawler] INFO: Overridden settings: {'DOWNLOAD_DELAY': 0.25, 'LOGSTATS_INTERVAL': 0, 'ROBOTSTXT_OBEY': True, 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter', 'LOG_FILE': 'log', 'NEWSPIDER_MODULE': 'mercadolibre.spiders', 'BOT_NAME': 'mercadolibre', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36', 'SPIDER_MODULES': ['mercadolibre.spiders']}
+2018-09-10 22:01:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-09-10 22:01:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-10 22:01:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-10 22:01:19 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-09-10 22:01:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-10 22:01:19 [scrapy.core.engine] INFO: Spider opened
+2018-09-10 22:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/robots.txt> (referer: None)
+2018-09-10 22:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://perfil.mercadolibre.com.co/VICTORLIFEROCK> (referer: None)
